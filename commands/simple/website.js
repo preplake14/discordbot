@@ -18,7 +18,7 @@ class WebSiteCommand extends commando.Command
         .setTitle("Website")
         .setColor(0xFF0000)
         .setThumbnail(message.author.avatarURL)
-        .setURL("preplak.rf.gd")
+        .setURL("http://preplak.rf.gd/")
         .setFooter("yeet")
         message.channel.sendEmbed(myInfo);
     }
