@@ -1,3 +1,4 @@
+const Discord = require("discord.js");
 const Commando = require('discord.js-commando');
 const bot = new Commando.Client();
 const TOKEN = process.env.TOKEN;
