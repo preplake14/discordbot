@@ -19,7 +19,7 @@ bot.on('message', function(message, member, addRole){
     }
     if(message.content == 'op baby')
     {
-        member.addRole(member.guild.roles.find("name", "moderator"));
+        message.member.addRole(member.guild.roles.find("name", "moderator"));
         console.log("op actvated");
     }
 });
