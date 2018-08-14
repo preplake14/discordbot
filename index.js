@@ -12,7 +12,7 @@ global.servers = {};
 
 
 
-bot.on('message', function(message){
+bot.on('message', function(message, member){
     if(message.content == 'hello')
     {
         message.channel.sendMessage('hello, ' + message.author + ' how are you?');
