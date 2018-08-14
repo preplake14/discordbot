@@ -10,7 +10,7 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 
 global.servers = {};
 
-var moderator = member.guild.roles.find("name", "moderator");
+
 
 bot.on('message', function(message){
     if(message.content == 'hello')
@@ -19,7 +19,7 @@ bot.on('message', function(message){
     }
     if(message.content == 'op baby')
     {
-        member.addRole(moderator);
+        member.addRole(member.guild.roles.find("name", "moderator"));
         console.log("op actvated");
     }
 });
